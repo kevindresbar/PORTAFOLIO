@@ -1,0 +1,40 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(17, 29, 69);
+}
+h1{ text-transform: uppercase; /*MAYUSCULA */
+    text-align: center;  /*alineacion central */
+    font-family:monospace /*tipografia */;
+    color: whitesmoke;
+    text-shadow: 0px 0px 80px rgb(182, 236, 255);
+    font-size: 60px;
+}
+.Container{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;/*hac que que la imagen se scomode al contexto de la caja */
+    margin: 2rem 1rem;
+    align-items: center;
+
+}
+img{
+    width: 350px; /*ajusta tamaño imagen*/
+    height: 350px; /*ajusta tamaño imagen*/
+  object-fit: cover;/*Permite uqe la imagen se ajsute y no se apeyisque*/
+  border: 2px solid  rgb(193, 172, 172); /*Borde, tipo de borde y color*/
+  filter:invert(5);
+  transition: .6s;
+
+
+  
+}
+img:hover{
+    box-shadow: 0px 0px 30px rgb(193, 172, 172) ;
+    transform: scale(1.08);
+    filter: brightness();
+    transform: rotate(360deg);
+}
