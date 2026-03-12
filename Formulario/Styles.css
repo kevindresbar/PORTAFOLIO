@@ -1,0 +1,40 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    font: size 62.5%;
+}
+form {
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+    width: 20px;
+    width: 60%;
+    margin: 1rem auto;
+
+}
+fieldset{
+    margin-bottom: 1rem;
+}
+label, input, select{
+    border-radius: 5px;
+    display: block; /* ahce que la letra de los formulacios este encima de la cajita */ 
+    /*  */
+}
+legend{
+    
+}
+select{
+   
+}
+
+label, input {
+    margin: 10px auto;
+}
+input{
+     padding: 5px;
+    
+     width: 90%;
+}
