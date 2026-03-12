@@ -3,10 +3,11 @@
     padding: 0px;
     box-sizing: border-box;
 }
+html{font: size 62.5%;}
 body{
     background-color: rgb(17, 29, 69);
 }
-h1{ text-transform: uppercase; /*MAYUSCULA */
+.Cont{ text-transform: uppercase; /*MAYUSCULA */
     text-align: center;  /*alineacion central */
     font-family:monospace /*tipografia */;
     color: whitesmoke;
@@ -38,3 +39,22 @@ img:hover{
     filter: brightness();
     transform: rotate(360deg);
 }
+a{
+    text-decoration: none;color: white;
+ }
+ .Menu{ 
+    display: flex;
+    justify-content:space-around; /* alinea*/
+    align-items: center; /* centra horizonta */
+    background-color: rgb(63, 65, 69);
+ }
+ .MenuList{
+    display: flex; /* hace flexibls lo que esta dentro de */
+    gap: 20px; /* espacio entre items hace igual que margin solo que margin es general */
+    list-style: none;
+ }
+ .Title{
+    text-decoration: none;color: black;
+    font-size: 32px;
+
+ }
