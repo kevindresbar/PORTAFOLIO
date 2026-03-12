@@ -1,0 +1,19 @@
+*{margin: 0px;
+    padding: 0px;
+    box-sizing:border-box;
+ }  
+ html{
+    font: size 62.5%;}
+    nav{
+    display: flex;
+    justify-content:space-around; /* alinea*/
+    align-items: center; /* centra horizonta */
+    background-color: rgb(63, 65, 69);
+
+ }
+ ul{
+    display: flex; /* hace flexibls lo que esta dentro de */
+    gap: 20px; /* espacio entre items hace igual que margin solo que margin es general */
+    list-style: none;
+ }
+ 
