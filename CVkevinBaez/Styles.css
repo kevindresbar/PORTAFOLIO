@@ -3,42 +3,56 @@
 padding: 0px;
 box-sizing: border-box;}
 html{
-    font-size: 62.5%; /* Facilita el uso de rem (1rem = 10px) */
+    font-size: 62.5%; /* Facilita el uso de rem (1rem = 10px) */    
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
 header{
     display: flex;
     align-items: center;    
-    background-color: #B0B0B0;  /* colorfondo de los items */
-    justify-content: space-around; /* justifica el contenido para que se distrivuya en en el misma caja */
-    
-}
+    background-color: #0000002d;  /* colorfondo de los items */
+    justify-content: space-between; /* justifica el contenido para que se distrivuya en en el misma caja */
+    padding: 0rem 3rem}
 
 .Logo{
-    display: inline-block; 
-    /*  hace uqe el logo se vuelva un elemto posible para mdoifica  */
     width:7rem;
-
 }
+
 .Menu{
     display: flex;   /* hace que sean faciles de mover */
+    align-items: center;
+    gap: 3rem;
 }
 .MenuList{
    display: flex;/* HACE QUE LOS ICONOS SE PONGAN FLEXIBLES EN ESTE CASO LOS PONE HORIZONTAL */
-   margin:3rem; /* MARGEN DE LOS ICONOS */
-   gap: 2rem; /* Espacio entre un item y el otro  */
+   gap: 3rem; /* Espacio entre un item y el otro  */
    list-style: none; /* quita el punto de la lista  */
+   
 }
 .MenuLink{
   text-decoration: none; /* quita la linea subrayada del link */
-  padding: 0px 50px;
-  color:#0D0D0D; /* obvio el color???? */
+  color:#000000; /* obvio el color???? */
   font-family: "Bitcount Prop Double";/* funente */
-  font-size: 4rem;/* tamaño letra */
+  font-size: 2rem;/* tamaño letra */
+  
 }
-.Med{
-width:8rem;/* tamaño medias */
+.Med {
+    width: 3rem;
 }
-p{
-    color: aqua;
-    font-size: 30rem;
+.Med:hover {
+    transform: scale(1.2);/* hace que los inocnos se agranden un poco al tocarlo */
+} 
+
+footer{ 
+    padding: 1rem; /* Grosor del pie */
+    background-color: #0000002d;
+    color: rgb(3, 3, 3);
+    font-family: "Bitcount Prop Double";
+    text-align: center;
+    margin-top: auto;
+    font-size: 1.2rem;
 }
