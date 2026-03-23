@@ -1,0 +1,142 @@
+*{/* Reseteo básico para quitar espacios por defecto del navegador */
+    margin: 0px;
+padding: 0px;
+box-sizing: border-box;}
+html{
+    font-size: 62.5%; /* Facilita el uso de rem (1rem = 10px) */    
+}
+/* Estilos específicos para la página de Contacto */
+
+.contacto {
+    flex: 1; /* Empuja el footer hacia abajo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 2rem;
+}
+
+.Informacion {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Divide en dos columnas iguales */
+    gap: 6rem;
+    max-width: 110rem;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.03); /* Fondo sutil */
+    padding: 5rem;
+    border-radius: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* Columna Izquierda: Texto e Información */
+.contactInfo h1 {
+    font-family: "Bitcount Prop Double";
+    font-size: 4.5rem;
+    margin-bottom: 2rem;
+    color: #000;
+}
+
+.contactInfo p {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 3rem;
+}
+
+.Contacto div {
+    margin-bottom: 2rem;
+}
+
+.Contacto p {
+    font-size: 1.7rem;
+    margin-bottom: 0;
+}
+
+.Contacto span {
+    font-weight: bold;
+    display: block; /* Pone el icono/título arriba del dato */
+    color: #000;
+    margin-bottom: 0.5rem;
+}
+
+.Contacto a {
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s;
+}
+
+.Contacto a:hover {
+    color: #666;
+}
+
+/* Columna Derecha: Formulario */
+.contact-form fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0;
+}
+
+.contact-form label {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: -0.5rem;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 1rem;
+    font-size: 1.4rem;
+    font-family: sans-serif;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.contact-form input:focus, 
+.contact-form textarea:focus {
+    border-color: #000;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 12rem;
+}
+
+/* Botón de envío */
+.btn {
+    margin-top: 1rem;
+    padding: 1.5rem;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 1rem;
+    font-family: "Bitcount Prop Double";
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #333;
+    transform: translateY(-3px);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+/* Responsive: Se adapta a celulares */
+@media (max-width: 768px) {
+    .Informacion {
+        grid-template-columns: 1fr; /* Una sola columna en móvil */
+        padding: 3rem;
+        gap: 4rem;
+    }
+
+    .contactInfo h1 {
+        font-size: 3.5rem;
+    }
+}
