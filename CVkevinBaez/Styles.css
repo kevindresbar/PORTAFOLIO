@@ -1,0 +1,44 @@
+*{/* Reseteo básico para quitar espacios por defecto del navegador */
+    margin: 0px;
+padding: 0px;
+box-sizing: border-box;}
+html{
+    font-size: 62.5%; /* Facilita el uso de rem (1rem = 10px) */
+}
+header{
+    display: flex;
+    align-items: center;    
+    background-color: #B0B0B0;  /* colorfondo de los items */
+    justify-content: space-around; /* justifica el contenido para que se distrivuya en en el misma caja */
+    
+}
+
+.Logo{
+    display: inline-block; 
+    /*  hace uqe el logo se vuelva un elemto posible para mdoifica  */
+    width:7rem;
+
+}
+.Menu{
+    display: flex;   /* hace que sean faciles de mover */
+}
+.MenuList{
+   display: flex;/* HACE QUE LOS ICONOS SE PONGAN FLEXIBLES EN ESTE CASO LOS PONE HORIZONTAL */
+   margin:3rem; /* MARGEN DE LOS ICONOS */
+   gap: 2rem; /* Espacio entre un item y el otro  */
+   list-style: none; /* quita el punto de la lista  */
+}
+.MenuLink{
+  text-decoration: none; /* quita la linea subrayada del link */
+  padding: 0px 50px;
+  color:#0D0D0D; /* obvio el color???? */
+  font-family: "Bitcount Prop Double";/* funente */
+  font-size: 4rem;/* tamaño letra */
+}
+.Med{
+width:8rem;/* tamaño medias */
+}
+p{
+    color: aqua;
+    font-size: 30rem;
+}
