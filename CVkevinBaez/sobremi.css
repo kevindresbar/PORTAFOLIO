@@ -6,3 +6,36 @@ html{
     font-size: 62.5%; /* Facilita el uso de rem (1rem = 10px) */    
     height: 100%;
 }
+.SobreMi {
+    display: flex;
+    align-items: center; /* Alinea VERTICALMENTE */
+    justify-content: center;
+    gap: 60px; /* Espacio entre texto y foto*/
+    margin: 60px auto;/* margen auto pa que lo centre y el espacio de la caja */
+    padding: 0 20px;}
+.Foto{
+    width: 100%;
+    border-radius: 50px;
+    /* tamaño imagen y borde */
+}
+
+.Nombre {
+    font-family: "Bitcount Prop Double";
+    font-size: 3.5rem;
+    margin: 20px;
+    color: #272727;
+
+}
+.subtitulo {
+    font-size: 1.6rem;
+    margin: 20px;
+    color: #555;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+.Demi{
+    font-size: 2rem;
+    margin: 20px;
+    text-align: justify;
+    /*tamaño letra, margen y  justifica texto */
+}

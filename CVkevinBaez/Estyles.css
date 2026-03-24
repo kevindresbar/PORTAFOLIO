@@ -25,7 +25,6 @@ html{
     padding: 15px;/* espacio entre caja e item */
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.05); /* SombraWow */
-    transition: transform 0.3s ease;
     align-items: center;
 }
 .Trabajos:hover {
