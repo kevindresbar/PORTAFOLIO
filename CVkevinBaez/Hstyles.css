@@ -6,3 +6,55 @@ html{
     font-size: 62.5%; /* Facilita el uso de rem (1rem = 10px) */    
     height: 100%;
 }
+main {
+    display: flex;
+    padding: 20px;
+    /* padis espacio incial al texto  */
+}
+
+.habilidades {
+    width: 100%;
+    /* los recuadros ocupen el espacio total de la pagina */
+}
+
+h2 {
+    font-family: "Bitcount Prop Double";/* tipografia */
+    font-size: 3.5rem;/* tamaño letra */
+    margin-bottom: 30px;/* margenabajo de paa separar de las cajas */
+    text-align: center;
+    
+}
+.items{
+    gap: 5px;
+    margin-bottom: 10px;
+}
+.items2{
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-family: "Bitcount Prop Double";/* tipografia */
+    font-size: 2.2rem;/* tamaño letra */
+    margin-bottom: 10px;/* margenabajo de paa separar de las cajas */
+}
+
+.U {
+    font-size: 1.6rem;/* tamaño */
+    font-weight: bold;/* negrita */
+    color: #444;/* colorletra */
+}
+
+span {
+    background: #000;
+    color: #fff;
+    padding: 2px 12px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+h4 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #666;
+}
