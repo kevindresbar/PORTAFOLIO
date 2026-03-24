@@ -5,84 +5,47 @@ box-sizing: border-box;}
 html{
     font-size: 62.5%; /* Facilita el uso de rem (1rem = 10px) */    
 }
-/* Contenedor de toda la sección */
-.experiencia {
-    max-width: 900px;
-    margin: 40px auto;
+.Experiencia {
+    max-width: 100%;
+    margin: 50px auto;
     padding: 0 20px;
+    /* tamaño machimo, margena auto pa que centre y el padign espacio de item contra cajaj */
 }
-
-.titulo {
-    font-family: "Bitcount Prop Double";
-    font-size: 3.5rem;
-    text-align: center;
-    margin-bottom: 40px;
+.Titulo {
+    font-family: "Bitcount Prop Double";/* fuente */
+    font-size: 3.5rem; /* tamaño letra */
+    text-align: center;/* alineatexto */
+    color: #272727;
+    margin-bottom: 50px; /* margen debajo para que haga espacio */
 }
-
-/* Cada bloque de trabajo */
-.trabajos {
-    display: flex; /* Pone logo a un lado y texto al otro */
-    gap: 30px;
-    background-color: #f8f8f8;
-    padding: 30px;
-    margin-bottom: 30px;
-    border-radius: 15px;
-    align-items: flex-start; /* Alinea al inicio por si el texto es largo */
-    border: 1px solid #eee;
-}
-
-/* El cuadro del logo */
-.logo {
-    flex: 0 0 150px; /* Ancho fijo para que todos los logos midan igual */
+.Trabajos {
     display: flex;
-    justify-content: center;
+    gap: 30px;/* espacio entre items */
+    background-color: rgba(255, 255, 255, 0.764); /* fondo de las cajs */
+    padding: 15px;/* espacio entre caja e item */
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05); /* SombraWow */
+    transition: transform 0.3s ease;
+    align-items: center;
 }
-
-.logo img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
+.Trabajos:hover {
+    transform:scale(1.01);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    /* Trascicon pa q se mueva  */
 }
-
-/* Bloque de texto */
-.texto-trabajo {
-    flex: 1;
+.logo{
+   width: 100%;
 }
-
-.texto-trabajo h3 {
-    font-family: "Bitcount Prop Double";
-    font-size: 2.2rem;
-    margin-bottom: 5px;
-}
-
-.nombre {
-    font-weight: bold;
-    font-size: 1.6rem;
-    color: #333;
-    margin-bottom: 2px;
-}
-
-.tiempo {
-    font-size: 1.3rem;
-    color: #777;
-    margin-bottom: 15px;
-}
-
-.descripcion {
-    font-size: 1.5rem;
-    line-height: 1.6;
-    color: #444;
+.Descripcion {
+    font-size: 1.4rem;
+    line-height: 1.4;
+    color: #272727;
     text-align: justify;
+    /* tamaño letra, interlineado, color, justificar texto */
 }
-
-/* Ajuste para celulares */
-@media (max-width: 650px) {
-    .trabajos {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    .logo {
-        flex: 0 0 100px;
-    }
+h3{
+    font-family: "Bitcount Prop Double";
+    font-size: 1.8rem;
+    color: #272727;
+    /* fuente, tamaño y color */
 }

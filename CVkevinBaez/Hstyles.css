@@ -41,7 +41,7 @@ h3 {
 .U {
     font-size: 1.6rem;/* tamaño */
     font-weight: bold;/* negrita */
-    color: #444;/* colorletra */
+    color: #272727;/* colorletra */
 }
 
 span {
@@ -55,5 +55,5 @@ span {
 h4 {
     font-size: 1.8rem;
     margin-bottom: 15px;
-    color: #666;
+    color: #272727;
 }
