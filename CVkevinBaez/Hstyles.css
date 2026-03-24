@@ -13,17 +13,9 @@ main {
 }
 
 .habilidades {
-    width: 100%;
-    /* los recuadros ocupen el espacio total de la pagina */
+    width: 100%;/* los recuadros ocupen el espacio total de la pagina */
 }
 
-h2 {
-    font-family: "Bitcount Prop Double";/* tipografia */
-    font-size: 3.5rem;/* tamaño letra */
-    margin-bottom: 30px;/* margenabajo de paa separar de las cajas */
-    text-align: center;
-    
-}
 .items{
     gap: 5px;
     margin-bottom: 10px;
@@ -31,6 +23,13 @@ h2 {
 .items2{
     gap: 5px;
     margin-bottom: 10px;
+}
+h2 {
+    font-family: "Bitcount Prop Double";/* tipografia */
+    font-size: 3.5rem;/* tamaño letra */
+    margin-bottom: 30px;/* margenabajo de paa separar de las cajas */
+    text-align: center;
+    
 }
 
 h3 {
@@ -47,7 +46,7 @@ h3 {
 
 span {
     background: #000;
-    color: #fff;
+    color: white;
     padding: 2px 12px;
     border-radius: 5px;
     font-size: 1.2rem;
