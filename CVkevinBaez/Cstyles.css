@@ -84,16 +84,14 @@ textarea {
     font-size: 1.8rem;
     /* todo lo relacionado al boton, margen, espacio en caja, color,tipografia y bordes */
 }
-
-/* Responsive: Se adapta a celulares */
-@media (max-width: 768px) {
-    .Informacion {
-        grid-template-columns: 1fr; /* Una sola columna en móvil */
+@media (max-width: 770px) {
+.Informacion{
+        grid-template-columns: 1fr; /* PASA DE DOS COLUMNAS A UNA  */
         padding: 3rem;
         gap: 4rem;
+        /* ESPACIO CAJA Y ENTRE ITEMS */
     }
-
-    .contactInfo h1 {
+h1{
         font-size: 3.5rem;
     }
 }
