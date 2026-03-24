@@ -36,46 +36,46 @@
                 <a target="_blank" href="https://www.instagram.com/kebaratija/">
                     <img class="Med" src="IMG/Ig.svg" alt="Instagram">
                 </a>
+                <!-- target para que se abra en una nueva pestaña a es el hiperviculo de las imagenes para que se direccionen a cada pagina web -->
             </div>
         </nav>
     </header>
     <main class="contacto">
         <section class="Informacion">
             <div class="contactInfo">
-                <h1>¡Hablemos!</h1>
+                <h1 class="Hablemos">¡Hablemos!</h1>
                 <p>
-                    Si tienes una propuesta, una duda o simplemente quieres conectar, puedes escribirme directamente o
-                    usar el formulario.
+                    Si tienes una propuesta, una duda o simplemente quieres contactarte conmigo, puedes escribirme directamente o
+                    usar el formulario. xo
                 </p>
 
                 <div class="Contacto">
                     <div>
                         <p> <span>📍 Ubicación:</span>Bogotá, Colombia</p>
-                    </div>
-                    <div>
-                        <p> <span>📧 Correo:</span><a href="mailto:kevindresbar@gmail.com"> kevindresbar@gmail.com</a>
+                   
+                        <p> <span>📧 Correo:</span><a class="Correo" href="mailto:kevindresbar@gmail.com"> kevindresbar@gmail.com</a>
+                            <!-- se pone el href para uqe sea el hipervinculo del correo por esa razon se pone el a -->
                         </p>
-                    </div>
-                    <div>
+                  
                         <p> <span>📞Teléfono: </span>3023340961</p>
                     </div>
                 </div>
             </div>
 
-            <form action="https://formspree.io/f/xpqyvdgg" method="POST" class="contact-form">
+            <form class="contact-form" action="https://formspree.io/f/xpqyvdgg" method="POST" >
 
                 <fieldset>
                     
                     <label for="name">Nombre</label>
-                    <input type="text" placeholder="Tu nombre completo" id="name">
+                    <input type="text" placeholder="Tu nombre completo" id="name" name="name2" required>
 
                     <label for="Mail">Correo Eletronico</label>
-                    <input type="email" placeholder="**********@example.com" id="Mail">
+                    <input type="email" placeholder="**********@example.com" id="Mail" name="email" required>
 
                     <label for="message">Mensaje</label>
-                    <textarea name="" placeholder="¿En qué puedo ayudarte?" id="message"></textarea>
+                    <textarea name="" placeholder="¿En qué puedo ayudarte?" id="message"  name="message" required></textarea>
 
-
+<!-- Se pone el requeride y el name en cada input para que se pueda enviar el formulario de lo contrario no dejara y saldra erro -->
                     <button type="submit" class="btn">Enviar Mensaje</button>
                 </fieldset>
             </form>

@@ -8,104 +8,71 @@ html{
 /* Estilos específicos para la página de Contacto */
 
 .contacto {
-    flex: 1; /* Empuja el footer hacia abajo */
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 5rem 2rem;
+    /* Para que en conctacto es para centar la infromacion */
 }
 
 .Informacion {
-    display: grid;
+    display: grid;/*  hace uqe nos dje organizar la info de forma de filas  */
     grid-template-columns: 1fr 1fr; /* Divide en dos columnas iguales */
-    gap: 6rem;
-    max-width: 110rem;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.03); /* Fondo sutil */
-    padding: 5rem;
-    border-radius: 2rem;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    gap: 6rem; /* espacio entre items */
+    max-width:85%;/* espacio maximo para que se vea la infouwu */
+    padding: 5rem; /* espacio entre la caja */
 }
 
-/* Columna Izquierda: Texto e Información */
-.contactInfo h1 {
-    font-family: "Bitcount Prop Double";
+.Hablemos{
+    font-family: "Bitcount Prop Double";/* tipografia */
     font-size: 4.5rem;
-    margin-bottom: 2rem;
     color: #000;
+    /* color y tamaño letra */
 }
 
-.contactInfo p {
+p{
     font-size: 1.8rem;
-    line-height: 1.6;
-    color: #444;
-    margin-bottom: 3rem;
+    line-height: 160%; /* interlineado para que la letra se vea mas separada mantener con porcentaje es dificl cuadrar con px o rem no coinciden */
+    color: #272727;
+    /* color y tamaño letra */
 }
 
-.Contacto div {
-    margin-bottom: 2rem;
-}
-
-.Contacto p {
-    font-size: 1.7rem;
-    margin-bottom: 0;
-}
-
-.Contacto span {
-    font-weight: bold;
-    display: block; /* Pone el icono/título arriba del dato */
+span {
+    font-weight: bold;/* negritaiw */
+    display: block; /* bloquea pa que quede fijo*/
     color: #000;
-    margin-bottom: 0.5rem;
 }
-
-.Contacto a {
+.Correo{
     text-decoration: none;
-    color: #000;
-    transition: color 0.3s;
+    color: #272727;
+    /* como a hace que quede como un viculo lo que hicimos es que text decoretion le quita la linea y el color quede igual al resto   */
 }
 
-.Contacto a:hover {
-    color: #666;
-}
-
-/* Columna Derecha: Formulario */
-.contact-form fieldset {
+fieldset{
     border: none;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    padding: 0;
+   /* sin borde  en la caja principl, display para que se pueda aplicar el colum que lo pone en columna y el gap esoacio entre items*/
 }
 
-.contact-form label {
+label {
     font-size: 1.5rem;
     font-weight: bold;
-    margin-bottom: -0.5rem;
+    /* tamaño letra del label y la negrita */
 }
 
-.contact-form input, 
-.contact-form textarea {
-    padding: 1.5rem;
+input, textarea {
+    padding: 1.5rem;/* tamaño del cuadro */
     border: 1px solid #ddd;
     border-radius: 1rem;
+    /* bordes de los cuadros, grosor tipo de grosor color y el ultimos es el radio para que se vea un tri circular */
     font-size: 1.4rem;
-    font-family: sans-serif;
-    outline: none;
-    transition: border-color 0.3s, box-shadow 0.3s;
+    /* transition: border-color 0.3s, box-shadow 0.3s; */
 }
 
-.contact-form input:focus, 
-.contact-form textarea:focus {
-    border-color: #000;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+textarea {
+    height: 12rem;/* tamaño cuadro */
 }
 
-.contact-form textarea {
-    resize: none;
-    height: 12rem;
-}
-
-/* Botón de envío */
 .btn {
     margin-top: 1rem;
     padding: 1.5rem;
@@ -115,17 +82,7 @@ html{
     border-radius: 1rem;
     font-family: "Bitcount Prop Double";
     font-size: 1.8rem;
-    cursor: pointer;
-    transition: transform 0.2s, background-color 0.3s;
-}
-
-.btn:hover {
-    background-color: #333;
-    transform: translateY(-3px);
-}
-
-.btn:active {
-    transform: translateY(0);
+    /* todo lo relacionado al boton, margen, espacio en caja, color,tipografia y bordes */
 }
 
 /* Responsive: Se adapta a celulares */
