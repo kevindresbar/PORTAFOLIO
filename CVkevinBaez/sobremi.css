@@ -32,6 +32,7 @@ html{
     color: #555;
     text-transform: uppercase;
     margin-bottom: 25px;
+    /* tamañoletra, margen, color, mayus y margen bajo para seprar  */
 }
 .Demi{
     font-size: 2rem;
