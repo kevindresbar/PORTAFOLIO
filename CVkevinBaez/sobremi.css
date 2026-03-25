@@ -14,7 +14,8 @@ html{
     margin: 60px auto;/* margen auto pa que lo centre y el espacio de la caja */
     padding: 0 20px;}
 .Foto{
-    width: 100%;
+    width: 20rem;
+    /* margin: auto; */
     border-radius: 50px;
     /* tamaño imagen y borde */
 }
